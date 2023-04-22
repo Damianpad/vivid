@@ -1,12 +1,23 @@
+import '../App.css'
 
 
 
-
-function Dashboard() {
+export default function Dashboard() {
 
     return (
-        <div>
-            <h1>Welcome back!</h1>
+        <div className='dashboardBody'>
+            <h1 className='dashboardTitle'>Dashboard</h1>
+
+            <div>
+                <span>Pipeline</span>
+            </div>
+            <div>
+                <span>Calendar</span>
+                <span>Billing</span>
+            </div>
+            <div>
+                <span>Analytics</span>
+            </div>
         </div>
     )
 }
