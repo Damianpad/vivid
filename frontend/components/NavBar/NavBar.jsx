@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { StyledNav } from "./NavBar.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faRightFromBracket, faGauge, faRectangleList, faClipboardList, faCreditCard, faCalendarDays, faPeopleGroup, faBullhorn, faChartLine} from "@fortawesome/free-solid-svg-icons"
@@ -20,22 +20,26 @@ const NavBar = () => {
         </div>
 
         <div className="searchContainer">
+
+
           {show?<input type="search" />: null}
         </div>
         <div className="itemContainer">
+         
           {show? <ul>
-            <li >Dashboard</li>
-            <li>Clients</li>
-            <li>Projects</li>
-            <li>Billing</li>
-            <li>Calendar</li>
-            <li>Team</li>
-            <li>Marketing</li>
-            <li>Analytics</li>
+            <Link to='/dashboard' className="navItem">Dashboard</Link>
+            <Link to='/' className="navItem">Clients</Link>
+            <Link to='/' className="navItem">Projects</Link>
+            <Link to='/' className="navItem">Billing</Link>
+            <Link to='/' className="navItem">Team</Link>
+            <Link to='/' className="navItem">Marketing</Link>
+            <Link to='/' className="navItem">Analytics</Link>
+
           </ul>: null}
           {!show? <ul className="iconContainer">
-            <FontAwesomeIcon icon={faGauge} className="navIcon" title="Dashboard"/>
-            <FontAwesomeIcon icon={faRectangleList} className="navIcon" title="Clients"/>
+            <Link to='/dashboard'><FontAwesomeIcon icon={faGauge} className="navIcon" title="Dashboard"/> </Link>
+            <Link  to='/'><FontAwesomeIcon icon={faRectangleList} className="navIcon" title="Clients"/></Link>
+            
             <FontAwesomeIcon icon={faClipboardList} className="navIcon" title="Projects"/>
             <FontAwesomeIcon icon={faCreditCard} className="navIcon" title="Billing"/>
             <FontAwesomeIcon icon={faCalendarDays} className="navIcon" title="Calendar"/>
@@ -43,6 +47,9 @@ const NavBar = () => {
             <FontAwesomeIcon icon={faBullhorn} className="navIcon" title="Marketing"/>
             <FontAwesomeIcon icon={faChartLine} className="navIcon" title="Analytics"/>
           </ul>: null}
+
+    
+
         </div>
 
         <div className="profileContainer">

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 #root {
   max-width: 1280px;
@@ -43,4 +44,21 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+}
+
+.dashboardBody {
+  background: #16192b;
+}
+
+.dashboardTitle {
+  padding: 2em;
 }

@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const StyledNav = styled.section`
 background: #212840;
-
 height: 100vh;
 margin: 0;
 
@@ -40,14 +39,22 @@ margin: 0;
 }
 & .itemContainer ul {
     padding: 0;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
-& .itemContainer li {
+& .itemContainer .navItem {
     list-style: none;
-    padding: .6em;
+
     font-family: helvetica;
     font-size: 1.6rem;
+    color: white;
+    width: 100%;
+    padding: .6em 0;
 }
-& .itemContainer li:hover{
+& .itemContainer .navItem:hover{
     cursor: pointer;
     background: #16192b;
     color: #73cba9;
@@ -57,6 +64,9 @@ margin: 0;
     font-size: 2.8em;
     padding: .3em;
     
+}
+& .navIcon {
+    color: white;
 }
 & .navIcon: hover{
     cursor: pointer;
