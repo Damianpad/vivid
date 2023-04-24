@@ -1,4 +1,5 @@
 import QuickAction from '../../components/QuickAction/QuickAction'
+import AnalyticsChart from '../../components/AnalyticsChart/AnalyticsChart'
 import '../App.css'
 
 
@@ -13,11 +14,12 @@ export default function Dashboard() {
                 <QuickAction />
             </div>
             <div>
+                <AnalyticsChart />
                 <span>Calendar</span>
                 <span>Billing</span>
             </div>
             <div>
-                <span>Analytics</span>
+
             </div>
         </div>
     )

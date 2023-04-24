@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  
+
 }
 header {
   display: flex;
@@ -59,8 +59,10 @@ header {
 .dashboardBody {
   background: #16192b;
   width: 100vw;
+
+  position: relative;
 }
 
 .dashboardTitle {
-  padding: .4em;
+ color: #73cba9;
 }

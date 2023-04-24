@@ -7,6 +7,10 @@ export const StyledQuickAction = styled.section`
     border-radius: 2em;
     margin: 0 2em;
     width: 50%;
+    
+}
+& .quickActionContainer h2 {
+    color: #73cba9;
 }
 & .actionItems {
     display: flex;
