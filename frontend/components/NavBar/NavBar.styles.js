@@ -4,6 +4,9 @@ export const StyledNav = styled.section`
 background: #212840;
 height: 100vh;
 margin: 0;
+position: sticky;
+top: 0;
+
 
 .NavContainer {
     display: flex;
@@ -11,6 +14,7 @@ margin: 0;
     padding: 1em 0;
 
 }
+
 & .title {
     display: flex;
     padding: 1.6em;
