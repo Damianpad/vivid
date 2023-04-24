@@ -1,3 +1,4 @@
+import QuickAction from '../../components/QuickAction/QuickAction'
 import '../App.css'
 
 
@@ -9,7 +10,7 @@ export default function Dashboard() {
             <h1 className='dashboardTitle'>Dashboard</h1>
 
             <div>
-                <span>Pipeline</span>
+                <QuickAction />
             </div>
             <div>
                 <span>Calendar</span>
