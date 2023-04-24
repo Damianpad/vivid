@@ -104,6 +104,3 @@ margin: 0;
 }
 `;
 
-const theme = {
-    main: `#212840`
-};
