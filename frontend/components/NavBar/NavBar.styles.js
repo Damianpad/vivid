@@ -43,7 +43,7 @@ top: 0;
 }
 & .itemContainer ul {
     padding: 0;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
