@@ -66,3 +66,8 @@ header {
 .dashboardTitle {
  color: #73cba9;
 }
+
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+}

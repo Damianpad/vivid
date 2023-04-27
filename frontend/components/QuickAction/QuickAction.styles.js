@@ -4,10 +4,9 @@ export const StyledQuickAction = styled.section`
 .quickActionContainer {
     background: #212840;
     border: 1px solid white;
-    border-radius: 2em;
-    margin: 0 2em;
-    width: 50%;
-    
+    border-radius: 1em;
+    margin: 0 2em;  
+    width: 100%;
 }
 & .quickActionContainer h2 {
     color: #73cba9;
@@ -15,11 +14,11 @@ export const StyledQuickAction = styled.section`
 & .actionItems {
     display: flex;
     justify-content: center;
-
+    padding: 0;
 }
 & .itemContainer {
     border: 1px solid white;
-    border-radius: 2em;
+    border-radius: .5em;
     display: inline;
     align-items: center; 
     justify-content: center;
