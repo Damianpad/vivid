@@ -28,24 +28,44 @@ const NavBar = () => {
          
           {show? <ul>
             <Link to='/dashboard' className="navItem">Dashboard</Link>
-            <Link to='/' className="navItem">Clients</Link>
-            <Link to='/' className="navItem">Projects</Link>
-            <Link to='/' className="navItem">Billing</Link>
-            <Link to='/' className="navItem">Team</Link>
-            <Link to='/' className="navItem">Marketing</Link>
-            <Link to='/' className="navItem">Analytics</Link>
+            <Link to='/clients' className="navItem">Clients</Link>
+            <Link to='/projects' className="navItem">Projects</Link>
+            <Link to='/billing' className="navItem">Billing</Link>
+            <Link to='/calendar' className="navItem">Calendar</Link>
+            <Link to='/team' className="navItem">Team</Link>
+            <Link to='/marketing' className="navItem">Marketing</Link>
+            <Link to='/analytics' className="navItem">Analytics</Link>
 
           </ul>: null}
           {!show? <ul className="iconContainer">
             <Link to='/dashboard'><FontAwesomeIcon icon={faGauge} className="navIcon" title="Dashboard"/> </Link>
-            <Link  to='/'><FontAwesomeIcon icon={faRectangleList} className="navIcon" title="Clients"/></Link>
-            
+
+            <Link  to='/clients'><FontAwesomeIcon icon={faRectangleList} className="navIcon" title="Clients"/></Link>
+
+            <Link to='/projects'>
             <FontAwesomeIcon icon={faClipboardList} className="navIcon" title="Projects"/>
+            </Link>
+
+            <Link to='/billing'>
             <FontAwesomeIcon icon={faCreditCard} className="navIcon" title="Billing"/>
+            </Link>
+            
+            <Link to='/calendar'>
             <FontAwesomeIcon icon={faCalendarDays} className="navIcon" title="Calendar"/>
+            </Link>
+            
+            <Link to='/team'>
             <FontAwesomeIcon icon={faPeopleGroup} className="navIcon" title="Team"/>
+            </Link>
+            
+            <Link to='/marketing'>
             <FontAwesomeIcon icon={faBullhorn} className="navIcon" title="Marketing"/>
+            </Link>
+            
+            <Link to='analytics'>
             <FontAwesomeIcon icon={faChartLine} className="navIcon" title="Analytics"/>
+            </Link>
+            
           </ul>: null}
 
     
