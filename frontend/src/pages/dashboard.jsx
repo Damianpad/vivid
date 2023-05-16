@@ -1,6 +1,7 @@
 import QuickAction from '../../components/QuickAction/QuickAction'
 import AnalyticsChart from '../../components/AnalyticsChart/AnalyticsChart'
 import ClientList from '../../components/ClientList/ClientList'
+import Calendar from '../../components/Calendar/Calendar'
 import '../App.css'
 
 
@@ -15,6 +16,7 @@ export default function Dashboard() {
             <div className='quickViewContainer'>
                 <QuickAction />
                 <AnalyticsChart />
+                <Calendar />
             </div>
             <div className='clientListContainer'>
                 <ClientList />
@@ -22,7 +24,7 @@ export default function Dashboard() {
         </div>
 
             <div>
-            <span>Calendar</span>
+                
                 <span>Billing</span>
             </div>
         </div>
