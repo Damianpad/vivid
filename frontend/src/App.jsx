@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from '../components/NavBar/NavBar'
 
@@ -27,6 +25,7 @@ function App() {
         <NavBar />
       </header>
       <Routes>
+        <Route path="/" element={<Dashboard />} />
         <Route path='/dashboard' element={<Dashboard />}></Route>
         <Route path='/clients' element={<Client />}></Route>
         <Route path='/projects' element={<Projects />}></Route>
