@@ -7,7 +7,7 @@ import {
   Route, Routes
 } from "react-router-dom";
 import Dashboard from './pages/dashboard'
-import Client from './pages/client'
+import Client from './pages/clients/client';
 import Projects from './pages/projects'
 import Billing from './pages/billing'
 import Calendar from './pages/calendar'
