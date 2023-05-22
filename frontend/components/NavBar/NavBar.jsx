@@ -30,7 +30,7 @@ const NavBar = () => {
         {show?<input type="search" />: null}
       </div>
       
-        <div className="itemContainer">
+        <div className={show ? "itemContainer openWidth" : "itemContainer"}>
          
           {show? <ul>
             <Link to='/dashboard' className="navItem">Dashboard</Link>
