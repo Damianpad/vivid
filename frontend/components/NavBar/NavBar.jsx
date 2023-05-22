@@ -5,25 +5,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faRightFromBracket, faGauge, faRectangleList, faClipboardList, faCreditCard, faCalendarDays, faPeopleGroup, faBullhorn, faChartLine} from "@fortawesome/free-solid-svg-icons"
 
 const NavBar = () => {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const toggle = () => setShow(!show)
 
 
   return (
     <StyledNav>
-        <div className="NavContainer">
+      <div className="NavContainer">
         <div className="title">
-          {show?<h1>vivid</h1>: null}
+          {show? <Link>
+                    <img src="src\assets\vivid_white.png" alt="vivid logo" className="logo"/>
+                  </Link>: null}
           
-          <FontAwesomeIcon icon={faBars} className="bars" onClick={toggle}/>
+        <Link className={show ? "hamburger close" : "hamburger"}
+              onClick={toggle}>
+          <span className="meat"></span>
+          <span className="meat"></span>
+          <span className="meat"></span>
+          <span className="meat"></span>
+        </Link>
+      </div>
 
-        </div>
-
-        <div className="searchContainer">
-
-
-          {show?<input type="search" />: null}
-        </div>
+      <div className="searchContainer">
+        {show?<input type="search" />: null}
+      </div>
+      
         <div className="itemContainer">
          
           {show? <ul>
@@ -67,10 +73,9 @@ const NavBar = () => {
             </Link>
             
           </ul>: null}
-
-    
-
         </div>
+
+
 
         <div className="profileContainer">
             {show?<img src="https://pbs.twimg.com/profile_images/1567214310358749186/V2q8M1ys_400x400.jpg" alt="" />:null}
@@ -82,6 +87,95 @@ const NavBar = () => {
         </div>
         
     </div>
+
+      <div className="mobile-nav">
+        <Link>
+          <img src="src\assets\vivid_white.png" alt="vivid logo" className="logo"/>
+        </Link>
+        <Link className={show ? "hamburger close" : "hamburger"}
+              onClick={toggle}>
+              <span className="meat"></span>
+              <span className="meat"></span>
+              <span className="meat"></span>
+              <span className="meat"></span>
+        </Link>
+
+        <div
+                            className={
+                                show
+                                    ? "mobile-nav-container mobile-height"
+                                    : "mobile-nav-container"
+                            }>
+                            {show && (
+                                <div className="nav-width">
+                                
+                                    <Link
+                                        className="mobile-nav-item show && 'active'"
+                                        to="/dashboard"
+                                        onClick={toggle}>
+                                        Dashboard
+                                    </Link>
+
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/clients"
+                                        onClick={toggle}>
+                                        Clients
+                                    </Link>
+
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/projects"
+                                        onClick={toggle}>
+                                        Projects
+                                    </Link>
+
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/billing"
+                                        onClick={toggle}>
+                                        Billing
+                                    </Link>
+
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/calendar"
+                                        onClick={toggle}>
+                                        Calendar
+                                    </Link>
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/team"
+                                        onClick={toggle}>
+                                        Team
+                                    </Link>
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/marketing"
+                                        onClick={toggle}>
+                                        Marketing
+                                    </Link>
+                                    <Link
+                                        className="mobile-nav-item"
+                                        to="/analytics"
+                                        onClick={toggle}>
+                                        Analytics
+                                    </Link>
+                                    
+                                    <div className="profileContainer">
+                                        {show?<img src="https://pbs.twimg.com/profile_images/1567214310358749186/V2q8M1ys_400x400.jpg" alt="" />:null}
+                                        {show?<div className="infoContainer">
+                                        <span>Damian Padilla</span>
+                                        <span>Parallax Films</span>
+                                        </div>:null}
+                                        <FontAwesomeIcon icon={faRightFromBracket} className="logoutIcon"/>
+        </div>
+        
+                                </div>
+                                )}
+                                </div>
+
+      </div>
     </StyledNav>
    
 

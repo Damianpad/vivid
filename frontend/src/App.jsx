@@ -16,8 +16,7 @@ import Marketing from './pages/marketing'
 import Analytics from './pages/analytics'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <Router>
     <div className="App">
