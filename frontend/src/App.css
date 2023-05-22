@@ -1,11 +1,11 @@
 
 body {
-  width:100%;
   margin: 0;
   padding: 0;
+  
 }
 #root {
-  
+  width: 100%;
 }
 
 .App {
@@ -27,7 +27,7 @@ header {
 
 }
 
-.dashboardBody {
+/* .dashboardBody {
   background: #16192b;
   width: 100%;
   position: relative;
@@ -46,4 +46,4 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */

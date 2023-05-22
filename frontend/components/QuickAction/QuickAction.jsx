@@ -6,33 +6,30 @@ const QuickAction = () => {
 
     return(
         <StyledQuickAction>
-        
+            <div className="quickActionContainer">
+                <h2>Quick Action</h2>
+                    <ul className="actionItems">
+                        <div className="itemContainer">
+                            <FontAwesomeIcon icon={faUserPlus} className="actionIcon"/>
+                            <li> Create Client </li>
+                        </div>
 
-        <div className="quickActionContainer">
-            <h2>Quick Action</h2>
-            <ul className="actionItems">
-                <div className="itemContainer">
-                    <li> Create Client </li>
-                    <FontAwesomeIcon icon={faUserPlus} className="actionIcon"/>
-                </div>
-
-                <div className="itemContainer">
-                    <li> Create Invoice </li> 
-                    <FontAwesomeIcon icon={faFileInvoice} className="actionIcon" />
-                </div>
-                
-                <div className="itemContainer">
-                    <li> New Project </li>
-                    <FontAwesomeIcon icon={faFolderPlus} className="actionIcon"/>
-                </div>
-                
-                <div className="itemContainer">
-                    <li> Book Appointment </li>
-                    <FontAwesomeIcon icon={faCalendarPlus} className="actionIcon" />
-                </div>
-                
-            </ul>
-        </div>
+                        <div className="itemContainer">
+                            <FontAwesomeIcon icon={faFileInvoice} className="actionIcon" />
+                            <li> Create Invoice </li> 
+                        </div>
+                        
+                        <div className="itemContainer">
+                            <FontAwesomeIcon icon={faFolderPlus} className="actionIcon"/>
+                            <li> New Project </li>
+                        </div>
+                        
+                        <div className="itemContainer">
+                            <FontAwesomeIcon icon={faCalendarPlus} className="actionIcon" />
+                            <li> Book Appointment </li>
+                        </div>
+                    </ul>
+            </div>
         </StyledQuickAction>
     )
 }

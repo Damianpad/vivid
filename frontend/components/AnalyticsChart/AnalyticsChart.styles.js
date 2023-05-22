@@ -1,15 +1,21 @@
 import styled from 'styled-components'
+import { device } from '../mediaQ/device'
 
 export const StyledAnalyticsChart = styled.section `
-    .analyticsContainer {
+
+    .analyticsContainer { 
         border: 1px solid white;
-        border-radius: 1em;
         background: #212840;
         color: #73cba9;
-        width: 100%;
-        margin: .5em 2em;
+    }
+    .analyticsContainer h2{
+        display: flex;
+        justify-content: center;
     }
     & .chartContainer {
-
+        
     }
+@media ${device.tablet}{
+
+}
 `

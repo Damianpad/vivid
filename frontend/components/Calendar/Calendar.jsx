@@ -57,11 +57,11 @@ const EventCalendar = () => {
         <div className="addEventContainer">
         <h3>Add New Event</h3>
         <div className="eventInputContainer">
-            <input type="text" placeholder="Add Title" style={{width: "20%", marginRight: "10px"}}
+            <input type="text" placeholder="Add Title"
             value={newEvent.title}
             onChange={(e) => setNewEvent({...newEvent, title: e.target.value})}
             />
-            <DatePicker placeholderText="Start Date" style={{marginRight: "10px"}}
+            <DatePicker placeholderText="Start Date"
             selected={newEvent.start} onChange={(start) => setNewEvent({...newEvent, start})}
             />
             <DatePicker placeholderText="End Date"

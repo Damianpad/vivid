@@ -9,8 +9,10 @@ const secondary = `#73cba9`
 const dark = `#16192b`
 
 export const StyledNav = styled.section`
-background: ${main};
-width: 100vw;
+background: ${dark};
+width: 100%;
+
+
 
 .NavContainer{
     display: none;
@@ -155,8 +157,15 @@ width: 100vw;
 
 
 @media ${device.laptop}{
+
+
+    height: 100vh;
+    border: 1px solid white;
     display: inline;
-    width: 100%;
+
+    .openWidth{
+        
+    }
 
     .mobile-nav{
         display: none;
@@ -218,6 +227,9 @@ width: 100vw;
         cursor: pointer;
         background: #16192b;
         color: #73cba9;
+    }
+    .iconContainer{
+       
     }
 
     .itemContainer .navIcon{
