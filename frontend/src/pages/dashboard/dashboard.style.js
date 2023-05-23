@@ -10,9 +10,8 @@ const secondary = `#73cba9`
 const dark = `#16192b`
 
 export const StyledDashboard = styled.section`
-background: ${main};
+margin-top: 50px;
 width: 100%;
-
 
 .dashboardBody {
     background: ${main};
@@ -40,6 +39,9 @@ width: 100%;
 }
 
 @media ${device.laptop}{
+    margin-top: 0px;
+    margin-left: 59px;
+    width: 100vw;
     .mainContainer {
         width: 100%;
 

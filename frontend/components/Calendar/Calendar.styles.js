@@ -13,6 +13,8 @@ export const StyledEventCalendar = styled.section `
 .calendarContainer {
     border: 1px solid white;
     background: ${main};
+    position: relative;
+    z-index: -1;
 }
 & .calendarTitle {
     color: ${secondary};

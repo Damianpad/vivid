@@ -11,7 +11,7 @@ const dark = `#16192b`
 export const StyledNav = styled.section`
 background: ${dark};
 width: 100%;
-
+position: fixed;
 
 
 .NavContainer{
@@ -22,6 +22,8 @@ width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: .5em 1em;
+    z-index: 999;
+    overflow: hidden;
 }
 .logo {
     width: 30%;
@@ -35,7 +37,7 @@ width: 100%;
     height: 25px;
     cursor: pointer;
     user-select: none;
-    z-index: 3;
+    z-index: 999;
 
     .meat {
         border-radius: 2px;
@@ -91,13 +93,13 @@ width: 100%;
     align-items: center;
     flex-direction: column;
     background: ${main};
-    position: absolute;
+    position: fixed;
     right: 0;
-    z-index: 2;
     top: 0;
-
+    z-index: 998;
     &.active {
         max-height: 500px;
+       
     }
 }
 
@@ -157,11 +159,14 @@ width: 100%;
 
 
 @media ${device.laptop}{
-
-
-    height: 100vh;
-    border: 1px solid white;
-    display: inline;
+    position: fixed;
+    width: auto;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid white;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
 
     .openWidth{
         
@@ -174,6 +179,7 @@ width: 100%;
 
     .NavContainer {
         display: flex;
+
         flex-direction: column;
         padding: 1em 0;
         width: 15%:
@@ -225,10 +231,11 @@ width: 100%;
 
     .itemContainer .navItem:hover{
         cursor: pointer;
-        background: #16192b;
-        color: #73cba9;
+        background: ${main};
+        color: ${secondary};
+        width: 100%:
     }
-    .iconContainer{
+    .navItem:hover {
        
     }
 
