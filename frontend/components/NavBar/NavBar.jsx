@@ -10,27 +10,29 @@ const NavBar = () => {
 
 
   return (
-    <StyledNav>
-      <div className="NavContainer">
+    <StyledNav className={show ? "openWidth" : null }>
+      <div className={show ? "NavContainer openWidth" : "NavContainer "}>
         <div className="title">
           {show? <Link>
                     <img src="src\assets\vivid_white.png" alt="vivid logo" className="logo"/>
                   </Link>: null}
           
-        <Link className={show ? "hamburger close" : "hamburger"}
+<div>
+<Link className={show ? "hamburger close" : "hamburger"}
               onClick={toggle}>
           <span className="meat"></span>
           <span className="meat"></span>
           <span className="meat"></span>
           <span className="meat"></span>
         </Link>
+</div>
       </div>
 
       <div className="searchContainer">
         {show?<input type="search" />: null}
       </div>
       
-        <div className={show ? "itemContainer openWidth" : "itemContainer"}>
+        <div className="itemContainer">
          
           {show? <ul>
             <Link to='/dashboard' className="navItem">Dashboard</Link>
