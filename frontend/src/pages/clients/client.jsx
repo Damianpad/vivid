@@ -1,5 +1,6 @@
 import '../../App.css'
 import { StyledClient } from './client.style'
+import ClientCard from '../../../components/ClientCard/ClientCard'
 
 export default function Client() {
 
@@ -18,6 +19,13 @@ export default function Client() {
                 <section className='new-client-container'>
                     <button>New Client + </button>
                 </section>
+            </section>
+
+            <section className='client-card-container'>
+                <ClientCard />
+                <ClientCard />
+                <ClientCard />
+                <ClientCard />
             </section>
 
             
