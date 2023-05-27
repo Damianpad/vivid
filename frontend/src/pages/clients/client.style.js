@@ -11,7 +11,7 @@ const dark = `#16192b`
 export const StyledClient = styled.section`
     margin-top: 50px;
     width: 100%;
-    background: ${main};
+    background: ${dark};
 
     .client-header {
         display: flex;
