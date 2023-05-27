@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 import Dashboard from './pages/dashboard/dashboard';
 import Client from './pages/clients/client';
-import Projects from './pages/projects'
-import Billing from './pages/billing'
-import Calendar from './pages/calendar'
-import Team from './pages/team'
-import Marketing from './pages/marketing'
-import Analytics from './pages/analytics'
+import Projects from './pages/projects/projects'
+import Billing from './pages/billing/billing'
+import Calendar from './pages/calendar/calendar'
+import Team from './pages/team/team'
+import Marketing from './pages/marketing/marketing'
+import Analytics from './pages/analytics/analytics'
 
 function App() {
   
