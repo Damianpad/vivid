@@ -9,7 +9,8 @@ const secondary = `#73cba9`
 const dark = `#16192b`
 
 export const StyledNav = styled.section`
-background: ${dark};
+background: ${main};
+border-bottom: 1px solid white;
 width: 100%;
 position: fixed;
 
@@ -239,7 +240,7 @@ position: fixed;
 
     .itemContainer .navItem:hover{
         cursor: pointer;
-        background: ${main};
+        background: ${dark};
         color: ${secondary};
         width: 100%:
     }
