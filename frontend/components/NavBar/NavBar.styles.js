@@ -219,14 +219,22 @@ position: fixed;
     }
 
     .itemContainer .navItem {
-        display: flex;
-        justify-content: center;
+                display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
         list-style: none;
         font-family: helvetica;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         color: white;
         padding: .6em 0;
         width: 100%;
+    }
+    .itemList{
+
+    }
+    .pairIcon{
+        margin: 0 auto;
+       
     }
 
     .itemContainer .navItem:hover{
@@ -235,8 +243,8 @@ position: fixed;
         color: ${secondary};
         width: 100%:
     }
-    .navItem:hover {
-       
+    .navItem {
+      
     }
 
     .itemContainer .navIcon{
