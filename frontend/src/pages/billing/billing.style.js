@@ -10,7 +10,7 @@ const dark = `#16192b`
 
 export const StyledBilling = styled.section`
 margin-top: 50px;
-background: ${main};
+background: ${dark};
 
 .headerContainer {
     display: flex;
