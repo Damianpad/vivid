@@ -1,14 +1,20 @@
 import styled from 'styled-components'
 import { device } from '../mediaQ/device'
 
+// Dark Purple
+const main = `#212840`
+// Light Green
+const secondary = `#73cba9`
+// Dark DARK Purple
+const dark = `#16192b`
+
 export const StyledQuickAction = styled.section`
 
 
 .quickActionContainer {
     display: flex;
     flex-direction: column;
-    background: #212840;
-    border: 1px solid white;
+    background: ${dark};
     padding: .4em;
 }
 & .quickActionContainer h2 {
@@ -26,19 +32,21 @@ export const StyledQuickAction = styled.section`
 }
 & .itemContainer {
     border: 1px solid white;
-    border-radius: 10px; 
+    border-radius: 5px; 
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
     padding: 1em;
-    margin: .5em;
+    margin: .2em;
+    background: ${main};
   
 }
 & .itemContainer:hover {
     cursor: pointer;
-    color: #73cba9;
-    background: #16192b;
+    color: ${dark};
+    background: ${secondary};
+    border: 1px solid ${dark};
 }
 & .actionItems li {
     list-style-type: none;
@@ -52,7 +60,11 @@ export const StyledQuickAction = styled.section`
 @media ${device.laptop}{
     width: 100%;
     .quickActionContainer{
-       
+
+    }
+    .itemContainer{
+        width: 100%;
+        margin: 0 1em;
     }
     .actionItems {
        display: flex;
