@@ -7,14 +7,16 @@ const main = `#212840`
 const secondary = `#73cba9`
 // Dark DARK Purple
 const dark = `#116192b`
+const shadow = '#080D2E'
 
 export const StyledEventCalendar = styled.section `
 
 .calendarContainer {
-    border: 1px solid white;
+    border: 1px solid ${secondary};
+    border-radius: 5px;
     background: ${main};
     position: relative;
-    z-index: -1;
+    box-shadow: 3px 5px 5px ${shadow};
 }
 & .calendarTitle {
     color: ${secondary};
@@ -41,14 +43,27 @@ export const StyledEventCalendar = styled.section `
     flex-direction: column;
     padding: .6em;
 }
-@media ${device.laptopL}{
+@media ${device.laptop}{
+    padding: 2em 0;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
     .eventInputContainer {
         flex-direction: row;
     }
+}
+@media ${device.laptopL}{
+    
+    .calendarContainer{
+        
+    }
+
     .eventCalendar{
-        margin: 0 auto;
-        width: 80%;
-        padding: 4em;
+
+     
     }
 }
 

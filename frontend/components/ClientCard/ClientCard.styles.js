@@ -7,21 +7,23 @@ const main = `#212840`
 const secondary = `#73cba9`
 // Dark DARK Purple
 const dark = `#16192b`
+// Dark Shadow
+const shadow = '#080D2E'
 
 export const StyledClientCard = styled.section`
-margin: 1em;
 
 & .clientContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
-    border-radius: .5em;
+    border: 1px solid${secondary};
+    box-shadow: 3px 5px 5px ${shadow};
+    border-radius: 5px;
     list-style: none; 
     padding: 1em; 
     margin-bottom: 1em;
-    background: ${dark};
+    background: ${main};
 }  
 
 & .clientContainer ul {
@@ -55,10 +57,20 @@ margin: 1em;
 }
 
 @media ${device.laptop}{
-
+    width: 100%;
     
-    .clientContainer{
-        
+    .clientListContainer{
+        width: 100%;
+    }
+    .clientTag {
+        display: flex;
+        flex-direction: column;
+    }
+    .clientTag h4 {
+        margin: 0;
+    }
+    .tag {
+        margin: .1em;
     }
 }
 `

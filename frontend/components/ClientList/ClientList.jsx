@@ -10,8 +10,6 @@ const ClientList = () => {
                     <ul className="clientList">
                         <ClientCard />
                         <ClientCard />
-                        <ClientCard />
-                        <ClientCard />
                     </ul>
                 </div>
             </div>

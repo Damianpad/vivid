@@ -60,7 +60,7 @@ const AnalyticsChart = () => {
     return (
         <StyledAnalyticsChart>
             <div className="analyticsContainer">
-                <h2>Analytics Chart</h2>
+                {/* <h2>Analytics Chart</h2> */}
                 <div className="chartContainer">
                 <Line options={options} data={data} />
                 </div>

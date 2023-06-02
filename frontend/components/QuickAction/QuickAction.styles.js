@@ -7,10 +7,10 @@ const main = `#212840`
 const secondary = `#73cba9`
 // Dark DARK Purple
 const dark = `#16192b`
+const shadow = '#080D2E'
 
 export const StyledQuickAction = styled.section`
-
-
+background: ${dark};
 .quickActionContainer {
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ export const StyledQuickAction = styled.section`
     padding: 0;
 }
 & .itemContainer {
-    border: 1px solid white;
+    border: 1px solid ${secondary};
     border-radius: 5px; 
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ export const StyledQuickAction = styled.section`
     padding: 1em;
     margin: .2em;
     background: ${main};
-  
+    box-shadow: 3px 5px 5px ${shadow};
 }
 & .itemContainer:hover {
     cursor: pointer;
@@ -60,7 +60,8 @@ export const StyledQuickAction = styled.section`
 @media ${device.laptop}{
     width: 100%;
     .quickActionContainer{
-
+        width: 90%;
+        margin: 0 auto;
     }
     .itemContainer{
         width: 100%;
