@@ -13,7 +13,7 @@ const NavBar = () => {
     <StyledNav className={show ? "openWidth" : null }>
       <div className={show ? "NavContainer openWidth" : "NavContainer "}>
         <div className="title">
-          {show? <Link>
+          {show? <Link className="logoContainer">
                     <img src="src\assets\vivid_white.png" alt="vivid logo" className="logo"/>
                   </Link>: null}
           
@@ -29,7 +29,7 @@ const NavBar = () => {
       </div>
 
       <div className="searchContainer">
-        {show?<input type="search" />: null}
+        {show?<input type="search" placeholder="Search"/>: null}
       </div>
       
         <div className="itemContainer">
@@ -57,9 +57,6 @@ const NavBar = () => {
             </Link>
             <Link to='/marketing' className="navItem">
             <FontAwesomeIcon icon={faBullhorn} className="pairIcon" title="Marketing"/>Marketing
-            </Link>
-            <Link to='/analytics' className="navItem">
-            <FontAwesomeIcon icon={faChartLine} className="pairIcon" title="Analytics"/>Analytics
             </Link>
 
           </ul>: null}
@@ -90,10 +87,6 @@ const NavBar = () => {
             
             <Link to='/marketing'>
               <FontAwesomeIcon icon={faBullhorn} className="navIcon" title="Marketing"/>
-            </Link>
-            
-            <Link to='analytics'>
-              <FontAwesomeIcon icon={faChartLine} className="navIcon" title="Analytics"/>
             </Link>
             
           </ul>: null}

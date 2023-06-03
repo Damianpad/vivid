@@ -13,11 +13,13 @@ background: ${main};
 border-bottom: 1px solid white;
 width: 100%;
 position: fixed;
-
+z-index: 999;
 
 .NavContainer{
     display: none;
+   
 }
+
 .mobile-nav{
     display: flex;
     justify-content: space-between;
@@ -26,9 +28,11 @@ position: fixed;
     z-index: 999;
     overflow: hidden;
 }
+
 .logo {
     width: 30%;
 }
+
 .hamburger {
     display: flex;
     justify-content: center;
@@ -112,6 +116,7 @@ position: fixed;
     align-items: center;
     font-size: 1.3em;
 }
+
 .mobile-nav-item:hover {
     background: ${secondary};
     color: ${main};
@@ -120,19 +125,20 @@ position: fixed;
 .mobile-height {
     height: 100%;
 }
+
 .nav-width {
     width: 100%;
 }
 
-
 .navContainer {
    
 }
+
 .navIcon{
   
 }
 
-& .profileContainer {
+.profileContainer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -140,24 +146,26 @@ position: fixed;
     border-top: 1px solid white;
     padding 1.6em 0;
 }
-& .profileContainer img{
+
+.profileContainer img{
     width: 4em;
     border-radius: 4em;
     
 }
-& .infoContainer {
+
+.infoContainer {
     display: flex;
     flex-direction: column;
 }
-& .logoutIcon {
+
+.logoutIcon {
     font-size: 2em;
 }
-& .logoutIcon: hover {
+
+.logoutIcon: hover {
     cursor: pointer;
     color: #73cba9;
 }
-
-
 
 @media ${device.laptop}{
     position: fixed;
@@ -168,10 +176,7 @@ position: fixed;
     z-index: 5;
     display: flex;
     justify-content: center;
-
-    .openWidth{
-        
-    }
+    line-height: 3em;
 
     .mobile-nav{
         display: none;
@@ -180,9 +185,8 @@ position: fixed;
 
     .NavContainer {
         display: flex;
-
         flex-direction: column;
-        padding: 1em 0;
+        padding: 2em 0;
         width: 15%:
     }
     
@@ -196,6 +200,12 @@ position: fixed;
         width: 7em;
     }
 
+    .logoContainer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .searchContainer{
         display: flex;
         justify-content: center;
@@ -203,7 +213,7 @@ position: fixed;
     }
 
     .searchContainer input{
-        border-radius: 25px;
+        border-radius: 5px;
         border: 1px solid white;
         padding: .6em;
         width: 15em;
@@ -220,7 +230,7 @@ position: fixed;
     }
 
     .itemContainer .navItem {
-                display: grid;
+        display: grid;
         grid-template-columns: 40% 60%;
         align-items: center;
         list-style: none;
@@ -230,12 +240,10 @@ position: fixed;
         padding: .6em 0;
         width: 100%;
     }
-    .itemList{
 
-    }
     .pairIcon{
         margin: 0 auto;
-       
+        
     }
 
     .itemContainer .navItem:hover{
@@ -244,22 +252,21 @@ position: fixed;
         color: ${secondary};
         width: 100%:
     }
-    .navItem {
-      
-    }
 
     .itemContainer .navIcon{
-        font-size: 2em;
+        font-size: 1.5em;
         padding: .3em;
+        padding: .6em .5em;
     }
+
     .navIcon {
-        color: white;
+        color: white;   
     }
+
     .navIcon: hover{
         cursor: pointer;
         color: #73cba9;
     }
-
 }
 
 
