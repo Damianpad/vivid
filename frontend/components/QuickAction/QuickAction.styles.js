@@ -7,6 +7,7 @@ const main = `#212840`
 const secondary = `#73cba9`
 // Dark DARK Purple
 const dark = `#16192b`
+// Dark Shadow
 const shadow = '#080D2E'
 
 export const StyledQuickAction = styled.section`

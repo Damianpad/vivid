@@ -59,6 +59,14 @@ width: 100%;
         justify-content: flex-start;
     }
     
+    .subContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     .calendarSubtitle{
         width: 100%;
         margin: 0;

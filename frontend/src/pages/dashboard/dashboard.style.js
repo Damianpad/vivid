@@ -27,6 +27,12 @@ width: 100%;
     padding 1em 0;
     font-size: 2rem;
 }
+.subContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 .dashboardSubTitle{
     display: none;
 }

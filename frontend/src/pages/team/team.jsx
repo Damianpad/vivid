@@ -1,5 +1,6 @@
 import { StyledTeam } from "./team.style"
 import ProjectCard from "../../../components/ProjectCard/ProjectCard"
+import SearchBar from "../../../components/SearchBar/SearchBar"
 
 export default function Team() {
 
@@ -7,7 +8,11 @@ export default function Team() {
         <StyledTeam>
             <section className="headerContainer">
                 <h1 className="teamTitle">Team</h1>
-                <h2 className='teamSubtitle'>Manage Team Here</h2>
+                
+                <section className='subContainer'>
+                    <h2 className='teamSubtitle'>Manage Team Here</h2>
+                    <SearchBar />
+                </section>
                 <hr class="customLine"/> 
             </section>
 

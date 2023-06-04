@@ -27,6 +27,14 @@ background: ${dark};
     font-size: 2rem;
 }
 
+.subContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .teamSubtitle{
     display: none;
 }

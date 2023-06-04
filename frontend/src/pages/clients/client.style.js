@@ -19,9 +19,13 @@ export const StyledClient = styled.section`
         justify-content: center;
         align-items: center;
     }
+
     .clientTitle {
         font-size: 2rem;
     }
+
+
+
     .new-client-container {
         display: flex;
         justify-content: center;
@@ -79,6 +83,14 @@ export const StyledClient = styled.section`
             margin: 0;
             padding: .5em 0;
             justify-content: flex-start;
+        }
+
+        .subContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
         }
 
         .clientSubtitle {
