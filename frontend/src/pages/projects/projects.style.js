@@ -36,7 +36,7 @@ width: 100%;
     display: none;
 }
 
-.search {
+.searchProject {
     margin: 1em;
     border-radius: 5px;
     border: 1px solid white;
@@ -45,7 +45,7 @@ width: 100%;
 
 }
 
-.search:focus{
+.searchProject:focus{
     background: ${main};
     outline: 1px solid ${secondary};
 }
@@ -86,6 +86,15 @@ button: hover{
         margin: 0;
         padding: .5em 0;
         justify-content: flex-start;
+    }
+
+    .subContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0;
     }
     
     .projectSubtitle{

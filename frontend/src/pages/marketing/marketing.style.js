@@ -34,7 +34,7 @@ background: ${dark};
 .customLine {
     display: none;
 }
-.search {
+.searchCampaign {
     margin: 1em;
     border-radius: 5px;
     border: 1px solid white;
@@ -42,7 +42,7 @@ background: ${dark};
     background: ${dark};
 }
 
-.search:focus{
+.searchCampaign:focus{
     background: ${main};
     outline: 1px solid ${secondary};
 }
@@ -93,6 +93,14 @@ button: hover{
         justify-content: flex-start;
     }
     
+    .subContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     .marketingSubtitle{
         width: 100%;
         margin: 0;

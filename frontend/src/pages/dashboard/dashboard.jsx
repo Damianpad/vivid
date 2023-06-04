@@ -5,6 +5,7 @@ import ClientCard from '../../../components/ClientCard/ClientCard'
 import Calendar from '../../../components/Calendar/Calendar'
 import EngagementChart from '../../../components/EngagementChart/EngagementChart'
 import { StyledDashboard } from './dashboard.style'
+import SearchBar from '../../../components/SearchBar/SearchBar'
 import '../../App.css'
 
 
@@ -15,8 +16,12 @@ export default function Dashboard() {
         <StyledDashboard>
         <div className='dashboardHeader'>
             <h1 className='dashboardTitle'>Dashboard</h1>
-            <h2 className='dashboardSubTitle'>Welcome Back Damian!</h2>
+                <section className='subContainer'>
+                    <h2 className='dashboardSubTitle'>Welcome Back Damian!</h2>
+                    <SearchBar />
+                </section>
             <hr class="custom-line"/>
+            
         </div>
         <div className="mainContainer">
             

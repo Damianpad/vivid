@@ -1,4 +1,5 @@
 import { StyledProjects } from './projects.style'
+import SearchBar from '../../../components/SearchBar/SearchBar'
 
 export default function Projects() {
 
@@ -6,11 +7,14 @@ export default function Projects() {
         <StyledProjects>
             <section className='headerContainer'>
                 <h1 className='headerTitle'>Projects</h1>
-                <h2 className='projectSubtitle'>Manage Projects Here</h2>
+                <section className='subContainer'>
+                    <h2 className='projectSubtitle'>Manage Projects Here</h2>
+                    <SearchBar />
+                </section>
                 <hr class="customLine"/>
             </section>
                 <section className='titleContainer'>
-                    <input type="text" placeholder='Search Projects' className='search'/>
+                    <input type="text" placeholder='Search Projects' className='searchProject'/>
                     <button>New +</button>
                 </section>  
 
