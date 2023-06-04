@@ -6,7 +6,9 @@ export default function Marketing() {
     return(
         <StyledMarketing>
             <section className="headerContainer">
-                <h1>Marketing</h1>
+                <h1 className="marketingTitle">Marketing</h1>
+                <h2 className='marketingSubtitle'>Manage Marketing Here</h2>
+                <hr class="customLine"/>
             </section>
 
             <section className="campaignBody">

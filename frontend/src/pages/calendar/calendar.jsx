@@ -6,7 +6,9 @@ export default function Calendar() {
     return(
         <StyledCalendar>
             <section className="headerContainer">
-                <h1>Calendar</h1>
+                <h1 className="calendarTitle">Calendar</h1>
+                <h2 className='calendarSubtitle'>Manage Calendar Here</h2>
+                <hr class="customLine"/>
             </section>
 
             <section className="calendarContainer">

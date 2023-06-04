@@ -13,18 +13,14 @@ export const StyledClient = styled.section`
     width: 100%;
     background: ${dark};
 
-    .client-header {
+    .clientHeader {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .client-title {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-
+    .clientTitle {
+        font-size: 2rem;
     }
     .new-client-container {
         display: flex;
@@ -58,10 +54,50 @@ export const StyledClient = styled.section`
         margin: 0;
         padding: 1em 0;
     }
+    .clientSubtitle{
+        display: none;
+    }
+
+    .customLine {
+        display: none;
+      }
 
     @media ${device.laptop}{
         margin-top: 0px;
         margin-left: 59px;
+
+        .clientHeader {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .clientTitle{
+            width: 100%;
+            margin: 0;
+            padding: .5em 0;
+            justify-content: flex-start;
+        }
+
+        .clientSubtitle {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 1em;
+        }
+
+        .customLine {
+            display: flex;
+            color: ${main};
+            background-color: ${main};
+            border: none;
+            width: 100%;
+            height: 1.5px;
+            margin: 1em auto;
+          }
 
         .client-card-container{
             width: 70%;
