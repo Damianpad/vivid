@@ -9,7 +9,9 @@ export default function Billing() {
     return(
         <StyledBilling>
             <section className="headerContainer">
-                <h1>Billing</h1>
+                <h1 className="billingTitle">Billing</h1>
+                <h2 className='billingSubtitle'>Manage Billing Here</h2>
+                <hr class="customLine"/>
             </section>
 
             <section className="actionContainer">

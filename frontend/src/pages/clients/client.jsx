@@ -6,10 +6,10 @@ export default function Client() {
 
     return(
         <StyledClient>
-            <section className='client-header'>
-                <section className='client-title'>
-                    <h1>Clients</h1>
-                </section>
+            <section className='clientHeader'>
+                    <h1 className='clientTitle'>Clients</h1>
+                    <h2 className='clientSubtitle'>Manage Clients Here</h2>
+                    <hr class="customLine"/>
             </section>
 
             <section className='action-container'>

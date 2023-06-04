@@ -6,11 +6,13 @@ export default function Team() {
     return(
         <StyledTeam>
             <section className="headerContainer">
-                <h1>Team</h1>
-                <input type="text" placeholder="search" />
+                <h1 className="teamTitle">Team</h1>
+                <h2 className='teamSubtitle'>Manage Team Here</h2>
+                <hr class="customLine"/> 
             </section>
 
             <section className="projectComponentContainer">
+            <input type="text" placeholder="search" />
                 <ProjectCard />
                 <ProjectCard />
                 <ProjectCard />
