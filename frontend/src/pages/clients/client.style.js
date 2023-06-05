@@ -7,6 +7,8 @@ const main = `#212840`
 const secondary = `#73cba9`
 // Dark DARK Purple
 const dark = `#16192b`
+// Dark Shadow
+const shadow = '#080D2E'
 
 export const StyledClient = styled.section`
     margin-top: 50px;
@@ -24,17 +26,18 @@ export const StyledClient = styled.section`
         font-size: 2rem;
     }
 
-
-
     .new-client-container {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         padding: 1em;
   
     }
+
     button {
         background: ${main};
-        border: 1px solid white;
+        border: 1px solid ${secondary};
+        box-shadow: 2px 4px 4px ${shadow};
     }
     button:hover {
         background: ${secondary};

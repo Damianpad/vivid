@@ -2,6 +2,7 @@ import '../../App.css'
 import { StyledClient } from './client.style'
 import ClientCard from '../../../components/ClientCard/ClientCard'
 import SearchBar from '../../../components/SearchBar/SearchBar'
+import FilterSelector from '../../../components/FilterSelector/FilterSelector'
 
 export default function Client() {
 
@@ -19,6 +20,7 @@ export default function Client() {
             <section className='action-container'>
 
                 <section className='new-client-container'>
+                    <FilterSelector />
                     <button>New Client + </button>
                 </section>
             </section>
