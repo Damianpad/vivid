@@ -25,12 +25,19 @@ export default function Client() {
                 </section>
             </section>
 
+        <section>
             <section className='client-card-container'>
                 <ClientCard />
                 <ClientCard />
                 <ClientCard />
                 <ClientCard />
             </section>
+            <section className='clientInfoContainer'>
+
+            </section>
+
+        </section>
+
 
             
         </StyledClient>
