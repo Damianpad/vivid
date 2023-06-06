@@ -24,6 +24,7 @@ export const StyledClientCard = styled.section`
     padding: 1em; 
     margin-bottom: 1em;
     background: ${main};
+    width: 100%;
 }  
 
 & .clientContainer ul {
@@ -57,10 +58,12 @@ export const StyledClientCard = styled.section`
 }
 
 @media ${device.laptop}{
-    width: 100%;
+    width: 80%;
+    display: flex;
+    
     
     .clientListContainer{
-        width: 100%;
+        width: 90%;
     }
     .clientTag {
         display: flex;

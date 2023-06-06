@@ -1,8 +1,8 @@
-import '../../App.css'
 import { StyledClient } from './client.style'
 import ClientCard from '../../../components/ClientCard/ClientCard'
 import SearchBar from '../../../components/SearchBar/SearchBar'
 import FilterSelector from '../../../components/FilterSelector/FilterSelector'
+import ClientInfo from '../../../components/ClientInfo/ClientInfo'
 
 export default function Client() {
 
@@ -25,15 +25,19 @@ export default function Client() {
                 </section>
             </section>
 
-        <section>
+        <section className='clientBody'>
             <section className='client-card-container'>
+                <ClientCard />
+                <ClientCard />
+                <ClientCard />
+                <ClientCard />
                 <ClientCard />
                 <ClientCard />
                 <ClientCard />
                 <ClientCard />
             </section>
             <section className='clientInfoContainer'>
-
+                <ClientInfo />
             </section>
 
         </section>
