@@ -71,7 +71,7 @@ button: hover{
 @media ${device.laptop}{
     margin-top: 0px;
     margin-left: 59px;
-    width: 100%;
+    
 
     .headerContainer {
         width: 90%;

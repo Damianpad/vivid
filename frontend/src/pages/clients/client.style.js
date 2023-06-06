@@ -11,6 +11,7 @@ const dark = `#16192b`
 const shadow = '#080D2E'
 
 export const StyledClient = styled.section`
+
     margin-top: 50px;
     width: 100%;
     background: ${dark};
@@ -27,7 +28,7 @@ export const StyledClient = styled.section`
     }
 
     .new-client-container {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         padding: 1em;
@@ -61,13 +62,21 @@ export const StyledClient = styled.section`
         margin: 0;
         padding: 1em 0;
     }
-    .clientSubtitle{
+    .subContainer{
         display: none;
     }
 
     .customLine {
         display: none;
-      }
+    }
+
+    .client-card-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     @media ${device.laptop}{
         margin-top: 0px;
@@ -103,6 +112,9 @@ export const StyledClient = styled.section`
             justify-content: flex-start;
             font-size: 1em;
         }
+        .subContainer{
+            display: flex;
+        }
 
         .customLine {
             display: flex;
@@ -115,11 +127,23 @@ export const StyledClient = styled.section`
           }
 
         .client-card-container{
-            width: 70%;
+            width: 90%;
+            height: 600px;
+            overflow: auto;
             display: flex;
             margin: 0 auto;
             justify-content: center;
             flex-direction: column;
+        }
+
+        .clientBody {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .clientInfoContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
     }
 `;
