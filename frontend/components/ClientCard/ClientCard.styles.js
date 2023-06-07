@@ -12,6 +12,7 @@ const shadow = '#080D2E'
 
 export const StyledClientCard = styled.section`
 
+
 & .clientContainer{
     display: flex;
     justify-content: center;
@@ -24,13 +25,22 @@ export const StyledClientCard = styled.section`
     padding: 1em; 
     margin-bottom: 1em;
     background: ${main};
-    width: 100%;
 }  
+.clientPhoto{
+    border: 1px solid ${secondary};
+    border-radius: 50%;
+    padding: .2em;
+    font-size: 1.5em;
+}
+.clientContainer:hover {
+    cursor: pointer;
+}
 
 & .clientContainer ul {
     padding: 0;
 }
 & .clientInfo {
+
     padding: .6em 2em;
 }
 & .clientContainer span {
@@ -43,12 +53,13 @@ export const StyledClientCard = styled.section`
     align-items: center;
 }
 & .tag {
-    border: 1px solid white;
+    border: 1px solid ${secondary};
     margin: .5em;
     border-radius: .5em;
     padding: .6em;
     color: white;
     background: ${main};
+    box-shadow: none;
 }
 & .tag:hover {
     cursor: pointer;
@@ -57,11 +68,21 @@ export const StyledClientCard = styled.section`
     border: 1px solid ${dark};
 }
 
+@media ${device.tablet}{
+    .clientContainer{ 
+        flex-direction: row;
+    }
+}
+
+
 @media ${device.laptop}{
-    width: 80%;
-    display: flex;
-    
-    
+    width: 90%;
+    margin: 0 auto;
+    .clientContainer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .clientListContainer{
         width: 90%;
     }

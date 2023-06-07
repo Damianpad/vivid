@@ -4,18 +4,21 @@ const ClientCard = () => {
     return(
         <StyledClientCard>
                 <div className="clientContainer">
+
+                    <section className="clientPhoto">
+                        <span>BV</span>
+                    </section>
                     
                     <div className="clientInfo">
-                    <span>Name: Damian </span>
+                    <span>Name: Bob Vance</span>
                     <span>Phone: 444-444-4444</span>
-                    <span>Email: Email@email.com</span>
+                    <span>Email: bobvance@vance.com</span>
                     </div>
 
 
                     <div className="clientTag">
-                        <h4>Tags:</h4>
-                        <button className="tag">Wedding</button>
-                        <button className="tag">Engagement</button>
+                        
+                        <button className="tag">Lead</button>
                     </div>
                 </div>
         </StyledClientCard>

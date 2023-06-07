@@ -10,7 +10,9 @@ export default function ClientInfo(){
                 <span>Other</span>
             </section>
 
+            
             <section className="infoContainer">
+                <span className="clientPhoto">BV</span>
                 <span>Client Name</span>
                 <span>Client Email</span>
             </section>

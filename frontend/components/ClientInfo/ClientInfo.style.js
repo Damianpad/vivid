@@ -24,9 +24,18 @@ border-radius: 5px;
 
 .infoContainer{
     padding: 1em;
+    margin: .4em;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.clientPhoto {
+    border: 1px solid ${secondary};
+    border-radius: 50%;
+    padding: 1em;
+    margin: 1em;
+    font-size: 2em;
 }
 
 .activityContainer{
@@ -34,5 +43,9 @@ border-radius: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: .4em;
+
 }
 `
