@@ -71,11 +71,20 @@ export const StyledClient = styled.section`
     }
 
     .client-card-container{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .clientInfoContainer {
+        display: none;
+    }
+
+    @media ${device.tablet}{
+        .client-card-container{
+
+            width: 70%;
+        }
     }
 
     @media ${device.laptop}{
@@ -127,13 +136,9 @@ export const StyledClient = styled.section`
           }
 
         .client-card-container{
-            width: 90%;
+            width: 100%;
             height: 600px;
             overflow: auto;
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            flex-direction: column;
         }
 
         .clientBody {
