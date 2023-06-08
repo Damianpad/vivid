@@ -30,6 +30,7 @@ export const StyledClient = styled.section`
     .new-client-container {
         width: 90%;
         display: flex;
+        align-items: center;
         justify-content: space-around;
         padding: 1em;
   

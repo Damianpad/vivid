@@ -3,6 +3,7 @@ import ClientCard from '../../../components/ClientCard/ClientCard'
 import SearchBar from '../../../components/SearchBar/SearchBar'
 import FilterSelector from '../../../components/FilterSelector/FilterSelector'
 import ClientInfo from '../../../components/ClientInfo/ClientInfo'
+import NewClientModal from '../../../components/NewClientModal/NewClientModal'
 
 export default function Client() {
 
@@ -21,7 +22,8 @@ export default function Client() {
 
                 <section className='new-client-container'>
                     <FilterSelector />
-                    <button>New Client + </button>
+                    
+                    <NewClientModal />
                 </section>
             </section>
 
