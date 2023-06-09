@@ -1,5 +1,6 @@
 import { StyledProjects } from './projects.style'
 import SearchBar from '../../../components/SearchBar/SearchBar'
+import NewProjectModal from '../../../components/NewProjectModal/NewProjectModal'
 
 export default function Projects() {
 
@@ -15,7 +16,8 @@ export default function Projects() {
             </section>
                 <section className='titleContainer'>
                     <input type="text" placeholder='Search Projects' className='searchProject'/>
-                    <button>New +</button>
+                    <NewProjectModal />
+                    
                 </section>  
 
 

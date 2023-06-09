@@ -68,6 +68,17 @@ button: hover{
     border: 1px solid ${dark};
 }
 
+.subContainer {
+    display: none;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media ${device.laptop}{
     margin-top: 0px;
     margin-left: 59px;
