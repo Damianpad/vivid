@@ -27,7 +27,7 @@ export default function NewClientModal(){
             <div className="modal-content">
               <h2>Add a New Client</h2>
               <section className="infoContainer">
-              <label name="nameInput">
+                <label name="nameInput">
                   <input className="input" placeholder="First Name"/>
                 </label>
 
