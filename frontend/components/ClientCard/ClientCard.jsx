@@ -1,24 +1,24 @@
 import { StyledClientCard } from "./ClientCard.styles"
 
-const ClientCard = () => {
+const ClientCard = (props) => {
     return(
         <StyledClientCard>
                 <div className="clientContainer">
 
                     <section className="clientPhoto">
-                        <span>BV</span>
+                        <span>{props.initial}</span>
                     </section>
                     
                     <div className="clientInfo">
-                    <span>Name: Bob Vance</span>
-                    <span>Phone: 444-444-4444</span>
-                    <span>Email: bobvance@vance.com</span>
+                    <span>{props.firstName} {props.lastName}</span>
+                    <span>{props.phone}</span>
+                    <span>{props.email}</span>
                     </div>
 
 
                     <div className="clientTag">
                         
-                        <button className="tag">Lead</button>
+                        <button className="tag">{props.tag}</button>
                     </div>
                 </div>
         </StyledClientCard>
