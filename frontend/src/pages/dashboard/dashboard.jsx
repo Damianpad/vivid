@@ -20,7 +20,7 @@ export default function Dashboard() {
                     <h2 className='dashboardSubTitle'>Welcome Back Damian!</h2>
                     <SearchBar />
                 </section>
-            <hr class="custom-line"/>
+            <hr className="custom-line"/>
             
         </div>
         <div className="mainContainer">
