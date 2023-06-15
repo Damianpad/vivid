@@ -4,7 +4,6 @@ import SearchBar from '../../../components/SearchBar/SearchBar'
 import FilterSelector from '../../../components/FilterSelector/FilterSelector'
 import ClientInfo from '../../../components/ClientInfo/ClientInfo'
 import NewClientModal from '../../../components/NewClientModal/NewClientModal'
-import ClientDetails from '../../../components/ClientDetails/ClientDetails'
 
 
 import React, { useState } from 'react';
