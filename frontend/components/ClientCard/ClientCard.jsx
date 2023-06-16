@@ -22,6 +22,7 @@ const ClientCard = (props) => {
 
                     <div className="clientTag">
                         <button className="tag">{props.tag}</button>
+                        
                     </div>
                 </section>
 

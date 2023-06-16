@@ -16,6 +16,8 @@ border: 1px solid ${secondary};
 box-shadow: 2px 4px 4px ${shadow};
 border-radius: 5px;
 
+
+
 .tagContainer {
     padding: 1em;
     display: flex;
