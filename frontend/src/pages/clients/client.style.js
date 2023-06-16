@@ -11,7 +11,6 @@ const dark = `#16192b`
 const shadow = '#080D2E'
 
 export const StyledClient = styled.section`
-
     margin-top: 50px;
     width: 100%;
     background: ${dark};
@@ -78,7 +77,7 @@ export const StyledClient = styled.section`
     }
 
     .clientInfoContainer {
-        display: none;
+       
     }
 
     @media ${device.tablet}{
@@ -144,7 +143,7 @@ export const StyledClient = styled.section`
         }
 
         .clientBody {
-            display: grid;
+            
             grid-template-columns: 50% 50%;
         }
         .clientInfoContainer{
