@@ -139,7 +139,6 @@ export const StyledClient = styled.section`
             width: 100%;
             height: 600px;
             overflow: auto;
-            border: 1px solid ${secondary};
         }
 
         .clientBody {
