@@ -1,4 +1,5 @@
 import { StyledClient } from './client.style'
+import { StyledNewClientModal } from '../../../components/NewClientModal/NewClientModal.style'
 import ClientCard from '../../../components/ClientCard/ClientCard'
 import SearchBar from '../../../components/SearchBar/SearchBar'
 import FilterSelector from '../../../components/FilterSelector/FilterSelector'
@@ -8,48 +9,15 @@ import NewClientModal from '../../../components/NewClientModal/NewClientModal'
 
 import React, { useState } from 'react';
 
-export default function Client() {
-    const clients = [
-        {
-            id: 1,
-            firstName: 'Damian',
-            lastName: 'Padilla',
-            phone: '469-686-5634',
-            email: 'damipad4@gmail.com',
-            tag: 'Lead'
 
-        },
-        {
-            id: 2,
-            firstName: 'Juan',
-            lastName: 'Ruiz',
-            phone: '469-555-4450',
-            email: 'juanruiz@gmail.com',
-            tag: 'Client'
-        },
-        {
-            id: 3,
-            firstName: 'Bob',
-            lastName: 'Vance',
-            phone: '469-551-1150',
-            email: 'Vance@refrigeration.com',
-            tag: 'Client'
-        },
-        {
-            id: 4,
-            firstName: 'Ana',
-            lastName: 'Urquia',
-            phone: '469-844-4990',
-            email: 'anacurquia@gmail.com',
-            tag: 'Other'
-        }
-]
+export default function Client() {
 
 const [name, setName] = useState("Client Name")
 const [email, setEmail] = useState("Client Email")
 const [phone, setPhone] = useState("444-444-4444")
 const [initial, setInitial] = useState("NA")
 const [tag, setTag] = useState("Tag")
+const [submitted, setSubmitted] = useState(false);
 
 
 const handleComponentSelection = () => {
@@ -78,7 +46,6 @@ const handleComponentSelection = () => {
 
                 <section className='new-client-container'>
                     <FilterSelector />
-                    <NewClientModal />
                 </section>
             </section>
 
