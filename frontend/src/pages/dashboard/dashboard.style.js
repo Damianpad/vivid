@@ -77,6 +77,9 @@ width: 100%;
         display: flex;
         font-size: 1em;
     }
+    .clientListContainer{
+        width: 100%;
+    }
     .custom-line {
         display: flex;
         color: ${main};

@@ -122,26 +122,26 @@ export default function ClientInfo(props){
         },
         {
             id: 2,
-            firstName: 'Juan',
-            lastName: 'Ruiz',
-            phone: '469-555-4450',
-            email: 'juanruiz@gmail.com',
+            firstName: 'Michael',
+            lastName: 'Scott',
+            phone: '444-555-4444',
+            email: 'michaelscott@dundermifflin.com',
             tag: 'Client'
         },
         {
             id: 3,
             firstName: 'Bob',
             lastName: 'Vance',
-            phone: '469-551-1150',
+            phone: '444-666-1150',
             email: 'Vance@refrigeration.com',
             tag: 'Client'
         },
         {
             id: 4,
-            firstName: 'Ana',
-            lastName: 'Urquia',
-            phone: '469-844-4990',
-            email: 'anacurquia@gmail.com',
+            firstName: 'Dwight',
+            lastName: 'Schrute',
+            phone: '444-844-1110',
+            email: 'Dschrute@dundermifflin.com',
             tag: 'Other'
         }
 ]

@@ -35,6 +35,7 @@ width: 100%;
 
 
 & .clientList {
+    width: 100%;
     background: ${dark};
     padding: 0;
     margin: 0;
